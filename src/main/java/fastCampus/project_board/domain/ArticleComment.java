@@ -59,10 +59,6 @@ public class ArticleComment {
     public int hashCode() {
         return Objects.hashCode(id);
     }
-    @PrePersist
-    void onCreate() {
-        this.createdAt = LocalDateTime.now();
-        this.createdBy = "system";
-    }
+
 
 }
